@@ -1042,11 +1042,19 @@ featured__item__pic:hover {
 .sidebar__item ul li {
     list-style: none;
 }
+.sidebar__item .btn-search {
+    margin-top: 2rem;
+    background-color: #007B5E;
+}
+    .sidebar__item .btn-search:hover {
+        background-color: #28A745;
+    }
 .sidebar__item h4 {
     color: #1c1c1c;
     font-weight: 700;
     margin-bottom: 25px;
 }
+
 /*--- /.price-range-slider ---*/
 .price-range-slider {
     width: 100%;

@@ -36,19 +36,22 @@
                             <li><a href="#">Phân bón gốc</a></li>
                             <li><a href="#">Phân bón vô cơ</a></li>
                             <li><a href="#">Phân hữu cơ</a></li>
-                            
+
                         </ul>
                     </div>
                     <div class="sidebar__item">
-                            <h4>Giá tiền</h4>
-                            <div class="range-slider">
-                                <span class="rangeValues"></span>
-                                <input  value="1000" min="1000" max="500000" step="500" type="range">
-                                <input class="rangeInput" value="50000" min="1000" max="500000" step="1000" type="range">
+                        <h4>Giá tiền</h4>
+                        <div class="range-slider">
+                            <span class="rangeValues"></span>
+                            <input value="1000" min="1000" max="500000" step="500" type="range">
+                            <input class="rangeInput" value="50000" min="1000" max="500000" step="1000" type="range">
 
 
-                            </div>
                         </div>
+                    </div>
+                    <div class="sidebar__item">
+                        <button type="button" class="btn btn-secondary btn-search">Tìm kiếm</button>
+                    </div>
 
                 </div>
             </div>
@@ -138,19 +141,3 @@
 
 <!-- Product Section End -->
 
-<script>
-    $(function () {
-        $(".slider-range").slider({
-            range: true,
-            min: 130,
-            max: 500,
-            values: [130, 250],
-            slide: function (event, ui) {
-                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-            }
-        });
-        $("#amount").val("$" + $(".slider-range").slider("values", 0) +
-            " - $" + $(".slider-range").slider("values", 1));
-    });
-
-</script>
