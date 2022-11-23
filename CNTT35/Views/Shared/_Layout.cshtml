@@ -251,8 +251,7 @@
                     <div class="sl-container">
                         <div class="sl-wrapper">
                             <h5 class="">Xin chào! Đăng nhập với</h5>
-                            <div class="sl-vertical social-wrap oxi_icon_center login"
-                                 style="padding-left: 0px">
+                            <div class="sl-vertical social-wrap oxi_icon_center login">
                                 <a class="social_login facebook">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          width="16"
@@ -278,14 +277,22 @@
                     <form>
                         <div class="form-group">
 
-                            <input placeholder="Username" class="form-control custom-input" id="recipient-name" />
+                            <input placeholder="Tài khoản" class="form-control custom-input" id="recipient-name" />
                         </div>
                         <div class="form-group">
-                            <input type="password" placeholder="Password" class="form-control custom-input" id="message-text"></input>
+                            <input type="password" placeholder="Mật khẩu" class="form-control custom-input" id="message-text" />
                         </div>
                         <div class="forgot-create">
-                            <h6>Quên mật khẩu?</h6>
-                            <h6>Tạo tài khoản mới</h6>
+                            <h6 data-dismiss="modal"
+                                data-toggle="modal"
+                                data-target="#exampleModalForgotPassword">
+                                Quên mật khẩu?
+                            </h6>
+                            <h6 data-dismiss="modal"
+                                data-toggle="modal"
+                                data-target="#exampleModalRegister">
+                                Tạo tài khoản mới
+                            </h6>
                         </div>
                     </form>
                 </div>
@@ -293,15 +300,166 @@
                     <button type="button"
                             class="btn btn-secondary"
                             data-dismiss="modal">
-                        Cancel
+                        Hủy bỏ
                     </button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-primary">Đăng nhập</button>
                 </div>
             </div>
+
+
+
         </div>
     </div>
     <!-- ./ Modal Login -->
+    <!-- Modal Register -->
+    <div class="modal fade"
+         id="exampleModalRegister"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng ký</h5>
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sl-container">
+                        <div class="sl-wrapper">
+                            <h5 class="">Đăng ký với</h5>
+                            <div class="sl-vertical social-wrap oxi_icon_center login">
+                                <a class="social_login facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="16"
+                                         height="16"
+                                         fill="currentColor"
+                                         class="bi bi-facebook"
+                                         viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                    <span> Facebook</span>
+                                </a>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a class="btn btn-outline-dark google " href="/users/googleauth" role="button" style="text-transform:none">
+                                            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                                            Google
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
 
+                            <input placeholder="Họ" class="form-control custom-input" id="recipient-Lastname" />
+                        </div>
+                        <div class="form-group">
+
+                            <input placeholder="Tên" class="form-control custom-input" id="recipient-Firstname" />
+                        </div>
+
+                        <div class="form-group">
+
+                            <input placeholder="Tài khoản" class="form-control custom-input" id="recipient-nameRegister" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Mật khẩu" class="form-control custom-input" id="message-text2" />
+                        </div>
+                        <div class="forgot-create">
+                            <h6>Đã có tài khoản?</h6>
+                            <h6 data-dismiss="modal"
+                                data-toggle="modal"
+                                data-target="#exampleModal">
+                                Đăng nhập
+                            </h6>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Hủy bỏ
+                    </button>
+                    <button type="button" class="btn btn-primary">Đăng ký</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- ./ Modal Register -->
+    <!-- Modal Forgot Password -->
+    <div class="modal fade"
+         id="exampleModalForgotPassword"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đặt lại mật khẩu của bạn</h5>
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="sl-container">
+                        <div class="sl-wrapper">
+                            <h5 class="">Chúng tôi sẽ gửi cho bạn một email để đặt lại mật khẩu của bạn</h5>
+                            <div class="sl-vertical social-wrap oxi_icon_center login">
+
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+
+                            <input placeholder="Email" class="form-control custom-input" id="recipient-email" />
+                        </div>
+
+                        <div class="forgot-create">
+                            <h6 data-dismiss="modal"
+                                data-toggle="modal"
+                                data-target="#exampleModal">
+                                Trở lại
+                            </h6>
+                            <h6 data-dismiss="modal"
+                                data-toggle="modal"
+                                data-target="#exampleModalRegister">
+                                Tạo tài khoản mới
+                            </h6>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Hủy bỏ
+                    </button>
+                    <button type="button" class="btn btn-primary">Gửi</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- ./ Modal Forgot Password -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
