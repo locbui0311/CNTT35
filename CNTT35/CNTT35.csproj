@@ -138,6 +138,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\elegant-icons.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\img\banner\banner-contact.jpg" />
     <Content Include="Content\img\featured\hat-giong-dua-hau-tao-ruot-do.jpg" />
     <Content Include="Content\img\featured\VC-kali-1-rong.png" />
     <Content Include="Content\img\featured\VC-phan-bon-kali-trang.png" />
