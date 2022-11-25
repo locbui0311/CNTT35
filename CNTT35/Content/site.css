@@ -37,16 +37,28 @@ hr {
 }
 
 .announcement-slider {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    letter-spacing: .2rem;
+    padding: 0.5rem 0rem;
+    font-family: Outfit,sans-serif !important;
+    line-height: 20px;
+    font-weight: 400;
+    cursor:pointer;
 }
-.nav-header {
-    height: 84px;
-    background-color: #FFF6F4 !important;
-   /* position: fixed !important;*/
-    position: -webkit-sticky !important;
-    /*top: 40px;*/
-    width: 100%;
-    z-index: 10;
-}
+    .announcement-slider span:hover {
+        color: black;
+    }
+    .nav-header {
+        height: 84px;
+        background-color: #FFF6F4 !important;
+        /* position: fixed !important;*/
+        position: -webkit-sticky !important;
+        /*top: 40px;*/
+        width: 100%;
+        z-index: 10;
+    }
 
 
 /*Menu dropdown*/
@@ -70,9 +82,12 @@ nav div div > ul li {
 
     nav div div > ul li a {
         display: block;
-        padding: 0 25px;
+        padding: 0px 16px;
         line-height: 50px;
-        color: #0F4C36 !important;
+        color: #007B5E !important;
+        font-size: initial;
+        font-weight: 500;
+        text-transform: uppercase;
         text-decoration: none;
     }
 
@@ -651,6 +666,9 @@ featured__item__pic:hover {
     height: 270px;
     position: relative;
     overflow: hidden;
+    background-position: center center;
+    background-size: 90%;
+    background-repeat: no-repeat;
 }
 
     .product__discount__item__pic .product__discount__percent {
@@ -746,11 +764,12 @@ featured__item__pic:hover {
 
         .product__discount__item__text h5 a {
             color: #1c1c1c;
+            text-decoration: none;
         }
 
     .product__discount__item__text .product__item__price {
         font-size: 18px;
-        color: #1c1c1c;
+        color: #e92814;
         font-weight: 700;
     }
 
@@ -763,6 +782,7 @@ featured__item__pic:hover {
 
 .product__discount__slider .col-lg-4 {
     max-width: 100%;
+    width: 100%;
 }
 
 .product__discount__slider.owl-carousel .owl-dots {
@@ -1045,9 +1065,12 @@ featured__item__pic:hover {
 .sidebar__item .btn-search {
     margin-top: 2rem;
     background-color: #007B5E;
+    width: 100%;
+    font-weight: 800;
+    text-transform: uppercase;
 }
     .sidebar__item .btn-search:hover {
-        background-color: #28A745;
+        background-color: #079d79;
     }
 .sidebar__item h4 {
     color: #1c1c1c;
@@ -1303,12 +1326,11 @@ featured__item__pic:hover {
        
     }
 
-    .shoping__checkout .primary-btn:hover {
-      
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #28A745;
-    }
+        .shoping__checkout .primary-btn:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #079d79;
+        }
 
 /*---------------------
   Checkout
@@ -1626,18 +1648,20 @@ tr:hover {
     text-transform: uppercase;
     display: inline-block;
     padding: 13px 30px 12px;
-    background: #7fad39;
+    background: #007B5E;
     border: none;
+    border-radius: 8px;
 }
-
-#myform {
-    text-align: center;
-    padding: 5px;
-    margin: 2%;
-    display: flex;
-    justify-content: space-around;
-  
-}
+    .site-btn:hover {
+        background: #079d79;
+    }
+    #myform {
+        text-align: center;
+        padding: 5px;
+        margin: 2%;
+        display: flex;
+        justify-content: space-around;
+    }
 .quantity-form {
     padding-top: 8px;
     background-color: #F0F0F0;
@@ -1769,8 +1793,10 @@ input[type=range]:focus::-ms-fill-upper {
     margin: -5px!important;
 }
 
-.rangeValues{
-margin-bottom:0.5rem;
+.rangeValues {
+    margin-bottom: 0.5rem;
+    color: #e92814;
+    font-weight: 700;   
 }
 
 /*---------------------
@@ -2047,3 +2073,88 @@ h5 {
 .google {
     width: 128px;
 }
+/*---------------------
+  Contact
+-----------------------*/
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.contact__widget {
+    margin-bottom: 30px;
+}
+
+    .contact__widget span {
+        font-size: 36px;
+        color: #007B5E;
+    }
+
+    .contact__widget h4 {
+        color: #1c1c1c;
+        font-weight: 700;
+        margin-bottom: 6px;
+        margin-top: 18px;
+    }
+
+    .contact__widget p {
+        color: #666666;
+        margin-bottom: 0;
+    }
+
+/*---------------------
+  Contact Form
+-----------------------*/
+
+.contact__form__title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+    .contact__form__title h2 {
+        color: #1c1c1c;
+        font-weight: 700;
+    }
+
+.contact-form {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+    .contact-form form input {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        color: #6f6f6f;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+    }
+
+        .contact-form form input::placeholder {
+            color: #6f6f6f;
+        }
+
+    .contact-form form textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 16px;
+        color: #6f6f6f;
+        padding-left: 20px;
+        margin-bottom: 24px;
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+        padding-top: 12px;
+        resize: none;
+    }
+
+        .contact-form form textarea::placeholder {
+            color: #6f6f6f;
+        }
+
+    .contact-form form button {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
