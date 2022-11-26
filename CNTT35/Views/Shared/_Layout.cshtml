@@ -3,22 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-
+    <title>Phân bón - CNTT35</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     @Styles.Render("~/Content/site.css")
     @Styles.Render("~/Content/bootstrap.min.css")
     @Styles.Render("~/Content/lib/bootstrap/dist/css/bootstrap.min.css")
     @Styles.Render("~/Content/owl.carousel.min.css")
     @Styles.Render("~/Content/jquery-ui.min.css")
     @Styles.Render("~/Content/owl.carousel.min.css")
-
-
-
-
-
-
-
-
 
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -28,7 +20,7 @@
             <div class="page-width">
                 <announcement-bar id="AnnouncementSlider-announcement-bar" data-compact="false" data-autorotate="true" data-autorotate-speed="5" data-block-count="1">
                     <div class="announcement-slider">
-                        <span class="" >Gọi ngay: (+84)3333 80 274 </span>
+                        <span class="">Gọi ngay: (+84)3333 80 274 </span>
                         <span class="" href="../Product/Index">Miễn phí giao hàng/400 000đ| Mua hàng ngay</span>
                         <span class="" href="../Home/Contact">Email liên hệ - banhangcntt35@gmail.com</span>
                     </div>
@@ -96,13 +88,13 @@
                         </li>
                         <li>
                             <a>@Html.ActionLink("Liên hệ", "Contact", "Home")</a>
-                            
+
                         </li>
 
                     </ul>
                     <div class="navbar-left">
                         <div class="search_form desktop-search st-search-box-desktop">
-                            <input type="text" placeholder="Search for plants, seeds and planters ..." name="st" autocomplete="off" class="search_input"><div id="st-trending-search" style="display: none;"><div class="autocomplete-body" style=""><div class="autocomplete-head"><div id="trend_left"><svg viewBox="0 0 500 500" width="18" height="18" fill="#0f4c36" class="st-icon"><svg xmlns="http://www.w3.org/2000/svg" height="500" viewBox="0 0 48 48" width="500"><path d="M32 12l4.59 4.59-9.76 9.75-8-8-14.83 14.83 2.83 2.83 12-12 8 8 12.58-12.59 4.59 4.59v-12z"></path></svg></svg> <span>Trending Searches</span></div></div> <div class="st-autocomplete-content"><ul class="st-trending-elements"><li><a href="https://ugaoo-store.myshopify.com/collections/indoor-plants" class="st-element"><svg viewBox="0 0 500 500" width="16" height="16" fill="#393939" class="st-icon"><svg xmlns="http://www.w3.org/2000/svg" height="500" viewBox="0 0 48 48" width="500"><path d="M32 12l4.59 4.59-9.76 9.75-8-8-14.83 14.83 2.83 2.83 12-12 8 8 12.58-12.59 4.59 4.59v-12z"></path></svg></svg> <span>Indoor Plants</span></a></li><li><a href="https://ugaoo-store.myshopify.com/collections/ceramic-pots" class="st-element"><svg viewBox="0 0 500 500" width="16" height="16" fill="#393939" class="st-icon"><svg xmlns="http://www.w3.org/2000/svg" height="500" viewBox="0 0 48 48" width="500"><path d="M32 12l4.59 4.59-9.76 9.75-8-8-14.83 14.83 2.83 2.83 12-12 8 8 12.58-12.59 4.59 4.59v-12z"></path></svg></svg> <span>Ceramic Pots</span></a></li></ul></div></div></div>
+                            <input type="text" placeholder="Tìm kiếm các sản phẩm..." name="st" autocomplete="off" class="search_input"><div id="st-trending-search" style="display: none;"><div class="autocomplete-body" style=""><div class="autocomplete-head"><div id="trend_left"><svg viewBox="0 0 500 500" width="18" height="18" fill="#0f4c36" class="st-icon"><svg xmlns="http://www.w3.org/2000/svg" height="500" viewBox="0 0 48 48" width="500"><path d="M32 12l4.59 4.59-9.76 9.75-8-8-14.83 14.83 2.83 2.83 12-12 8 8 12.58-12.59 4.59 4.59v-12z"></path></svg></svg> <span>Trending Searches</span></div></div> <div class="st-autocomplete-content"><ul class="st-trending-elements"><li><a href="https://ugaoo-store.myshopify.com/collections/indoor-plants" class="st-element"><svg viewBox="0 0 500 500" width="16" height="16" fill="#393939" class="st-icon"><svg xmlns="http://www.w3.org/2000/svg" height="500" viewBox="0 0 48 48" width="500"><path d="M32 12l4.59 4.59-9.76 9.75-8-8-14.83 14.83 2.83 2.83 12-12 8 8 12.58-12.59 4.59 4.59v-12z"></path></svg></svg> <span>Indoor Plants</span></a></li><li><a href="https://ugaoo-store.myshopify.com/collections/ceramic-pots" class="st-element"><svg viewBox="0 0 500 500" width="16" height="16" fill="#393939" class="st-icon"><svg xmlns="http://www.w3.org/2000/svg" height="500" viewBox="0 0 48 48" width="500"><path d="M32 12l4.59 4.59-9.76 9.75-8-8-14.83 14.83 2.83 2.83 12-12 8 8 12.58-12.59 4.59 4.59v-12z"></path></svg></svg> <span>Ceramic Pots</span></a></li></ul></div></div></div>
                             <button type="submit" class="search_button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -131,7 +123,15 @@
                             </svg>
                             <span class="visually-hidden">Cart</span>
                         </a>
+                        <a href="../Home/Account" id="myBtn" class="header__icon header__icon--account focus-inset">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                </svg>
+                                <span class="visually-hidden">edit</span>
+                            </a>
+
                     </div>
+
                 </div>
             </div>
         </nav>
@@ -146,33 +146,32 @@
             <div class="container">
                 <div class="row text-center text-xs-center text-sm-left text-md-left">
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Quick links</h5>
+                        <h5>Về Website</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Trang chủ</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Giới thiệu</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Sản phẩm</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Dịch vụ</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Liên hệ</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Quick links</h5>
+                        <h5>Thông tin và hướng dẫn</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Hình thức thanh toán</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Hướng dẫn đặt hàng</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Các câu hỏi thường gặp</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Chính sách bảo mật</a></li>
+                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Điều khoản sử dụng</a></li>
+
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Quick links</h5>
+                        <h5>Tải ứng dụng trên</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                            <li><a href="javascript:void();"><img alt="File:Download on the App Store Badge.svg" style="margin: 0 0 -16px -16px" width="350" src="https://www.freepnglogos.com/uploads/app-store-logo-png/download-on-the-app-store-logo-png-23.png"></a></li>
+                            <li><a href="javascript:void();"><img alt="Tải ứng dụng trên Google Play" style="margin: 0 0 -16px -16px" width="240" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png?hl=vi"></a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -231,7 +230,7 @@
         <!-- ./Footer -->
 
         <footer class="border-top footer footer">
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Liên hệ hỗ trợ: (+84)3333 80 274</p>
         </footer>
     </div>
     <!-- Modal Login -->
@@ -466,6 +465,8 @@
     </div>
     <!-- ./ Modal Forgot Password -->
 
+    </div>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Content/js/jquery.slicknav.js")
@@ -490,6 +491,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>
