@@ -13,5 +13,9 @@ namespace CNTT35.Controllers
         {
             return View();
         }
+        public ActionResult Confirm()
+        {
+            return View();
+        }
     }
 }
