@@ -3,6 +3,8 @@
     ViewBag.Title = "Detail";
 }
 
+
+
 <div class="collection-hero collection-hero--with-image collection-hero--contrast section-template--15208910487684__banner-padding">
     <div class="collection-hero__inner">
         <div class="collection-hero__image-container">
@@ -32,7 +34,19 @@
                     <div class="product__details__pic__item">
                         <img class="product__details__pic__item--large" src="~/Content/img/featured/SieuKem.jpg" alt="">
                     </div>
-                   
+
+                    <div class="product__details__pic__slider owl-carousel">
+
+                        <img data-imgbigurl="~/Content/img/featured/SH_BORON.jpg"
+                             src="~/Content/img/featured/SH_BORON.jpg" alt="">
+                        <img data-imgbigurl="~/Content/img/featured/SIEUDONG.jpg"
+                             src="~/Content/img/featured/SIEUDONG.jpg" alt="">
+                        <img data-imgbigurl="~/Content/img/featured/xa-lach.jpg"
+                             src="~/Content/img/featured/xa-lach.jpg" alt="">
+                        <img data-imgbigurl="~/Content/img/featured/FulvicExtra.jpg"
+                             src="~/Content/img/featured/FulvicExtra.jpg" alt="">
+                    </div>
+
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -70,12 +84,12 @@
                         </form>
                     </div>
                     <a href="#" class="primary-btn">THÊM VÀO GIỎ HÀNG</a>
-                    
+
                     <ul>
                         <li><b>Availability</b> <span>In Stock</span></li>
                         <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
-                        
-                        
+
+
                     </ul>
                 </div>
             </div>
@@ -83,13 +97,13 @@
                 <div class="product__details__tab">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab" aria-selected="true">Description</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab" aria-selected="true">Mô tả</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-selected="false">Information</a>
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-selected="false">Nhà sản xuất</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Reviews <span>(1)</span></a>
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Đánh giá  <span>(1)</span></a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -171,3 +185,4 @@
 </section>
 
 <!-- Product Details Section End -->
+@Scripts.Render("~/Content/js/main.js")
