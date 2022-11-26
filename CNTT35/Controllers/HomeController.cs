@@ -26,5 +26,10 @@ namespace CNTT35.Controllers
 
             return View();
         }
+        public ActionResult Account()
+        {
+
+            return View();
+        }
     }
 }
