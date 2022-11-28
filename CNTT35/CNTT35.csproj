@@ -138,6 +138,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\elegant-icons.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\img\banner\148233211_2853108691571654_4593578972079794825_n.jpg" />
+    <Content Include="Content\img\banner\agricultural-sector.jpg" />
     <Content Include="Content\img\banner\banner-contact.jpg" />
     <Content Include="Content\img\featured\hat-giong-dua-hau-tao-ruot-do.jpg" />
     <Content Include="Content\img\featured\VC-kali-1-rong.png" />
