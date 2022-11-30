@@ -95,3 +95,6 @@ function renderCity(data) {
         }
     };
 }
+
+
+/*JS carousel  */
